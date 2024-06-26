@@ -12,7 +12,28 @@ html{
 
 /*Genereal*/
 
+img{
+    width: 100%;
+}
 
+* > ul li{
+
+    list-style: none;
+
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*text-decoration*/
+
+.text-white{
+
+    color: white;
+}
 /*Main*/
 
 .container{
@@ -21,17 +42,64 @@ html{
     display: flex;
     width: 100%;
     height: calc(100vh - 100px);
-    background-color: red;
+    background-color: #141922;
     
 }
 
 /*Aside*/
 
 .aside-container{
-
-    width: 20%;
+    position: relative;
+    width: 15%;
     min-height: 100%;
     background-color:black;
+    
+}
+
+.logo-spotify{
+
+    width: 60%;
+    margin: 20px auto 20px 20px;
+}
+
+
+.top-aside,
+.center-aside
+{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.top-aside li{
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.center-aside h3{
+
+    padding-bottom: 20px;
+}
+.center-aside li{
+
+    line-height: 32px;
+}
+
+
+
+.bottom-aside{
+
+    position: absolute;
+    width:100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.bottom-aside hr{
+
+    color: grey;
+    margin: 10px 0;
     
 }
 
@@ -39,22 +107,28 @@ html{
 
 .content-container{
 
-    width: 80%;
+    width: 85%;
 
 }
 
 
 .top-content{
-
-    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 85%;
     min-height: 100px;
-    background-color: #080B12;
+    background-color: rgba(0, 0 ,0 , 0.7);
     
 
 }
 
 .bottom-content{
 
+    position: relative;
+    bottom: 0;
+    left: 0;
     width: 100%;
     min-height: 100%;
     background-color: #141922;

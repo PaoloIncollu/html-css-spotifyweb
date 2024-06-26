@@ -15,14 +15,62 @@ html{
 
 /*Main*/
 
+.container{
+
+    
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: red;
+    
+}
 
 /*Aside*/
+
+.aside-container{
+
+    width: 20%;
+    min-height: 100%;
+    background-color:black;
+    
+}
+
+/*Content*/
+
+.content-container{
+
+    width: 80%;
+
+}
+
+
+.top-content{
+
+    width: 100%;
+    min-height: 100px;
+    background-color: #080B12;
+    
+
+}
+
+.bottom-content{
+
+    width: 100%;
+    min-height: 100%;
+    background-color: #141922;
+    
+}
 
 /*Footer*/
 
 footer{
 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
     width: 100%;
     min-height: 100px;
     background-color: #282828;
+
 }

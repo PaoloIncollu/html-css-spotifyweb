@@ -19,3 +19,10 @@ html{
 /*Aside*/
 
 /*Footer*/
+
+footer{
+
+    width: 100%;
+    min-height: 100px;
+    background-color: #282828;
+}

@@ -14,6 +14,7 @@ html{
 
 img{
     width: 100%;
+    display: block;
 }
 
 * > ul li{
@@ -89,7 +90,7 @@ a{
 .center-aside,
 .bottom-aside
 {
-
+    position: relative;
     width: 100%;
     padding: 0 20px 10px;
     
@@ -99,7 +100,6 @@ a{
 .center-aside ul{
 
     width: 100%;
-    height:200px ;
     overflow:auto;
 }
 
@@ -196,11 +196,20 @@ a{
 
 .bottom-content nav ul li{
 
-    line-height: 2rem;
+    line-height: 1.5rem;
     padding-left: 20px;
     font-size: 0.7rem;
 }
 
+.bottom-content nav ul li hr{
+
+    display: none;
+    width: 30px;
+    margin-left:calc(50% - 15px) ;
+    margin-right: calc(50% - 15px);
+    color: greenyellow;
+
+}
 .container-row h3{
 
     margin-bottom: 15px;
@@ -222,12 +231,34 @@ a{
 }
 
 .img-card{
-    
+    position: relative;
     margin-bottom: 10px;
     object-fit: cover;
 }
 
-.img-card.img-circle img{
+.card-play{
+
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0 ,0 , 0.5);
+}
+.img-card i{
+
+    
+    position: absolute;
+    top:50%;
+    left: 50%;
+    color: white;
+    font-size: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.circle {
 
     border-radius: 50%;
 }
@@ -391,6 +422,37 @@ footer{
     padding-left: 20px;
 }
 
+
+
+/*Hover*/
+
+a:hover{
+
+    color: white;
+}
+
+.bt-upgrade:hover{
+
+    transform: scale(1.2);
+}
+
+.bottom-content nav ul li:hover hr{
+
+    display: block;
+    
+
+}
+.top-aside ul li:hover{
+
+    border-left: 2px solid greenyellow;
+}
+
+.img-card:hover .card-play{
+    
+    display: block;
+
+}
+
 /*Responsive*/
 
 @media screen and (max-width:1100px) {
@@ -462,8 +524,6 @@ footer{
         margin: 0 auto 20px;
     }
 
-    
-
     .aside-container{
 
         align-items: center;
@@ -473,6 +533,13 @@ footer{
 
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-aside .user-icon{
+
+        padding-top: 10px;
+        font-size: 32px;
     }
 
     .footer-center{
